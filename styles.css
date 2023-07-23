@@ -1,10 +1,9 @@
-
 .menu {
     padding: 0 10px 30px 10px;
     display: grid;
     grid-template-columns: repeat( auto-fit,minmax (350px, lfr));
-}
     
+}
 
 .heading {
      background-color: #cb202d;
@@ -19,7 +18,11 @@
     max-width: 17em;
     border: 2px solid black;
     border-radius: 1em;
-     margin: 0 5px;
+    margin: 0 1.5em 0 5em;
+    display: flex;
+    flex-direction: column;
+   
+    
 
 }
 
@@ -30,7 +33,15 @@
 
 .card-body {
     padding: 0 1em 1em;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
 
+p {
+    margin-top: auto;
 }
 
 button {
@@ -40,20 +51,29 @@ button {
     background-color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: auto;
+    
+    
 }
 
 main {
+    text-align: center;
+    display: -webkit-box;
+        display: -ms-flexbox
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    padding:  3em;
-    margin-top: 3em;
+    padding:  2em;
+    margin-top: .2em;
+    
+    }
 
-   
-}
 
 @media only screen and (max-width: 600px) {
     main {  
       flex-direction: column;
+      gap: 10px;
     }
 }
